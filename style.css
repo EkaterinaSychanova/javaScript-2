@@ -1,0 +1,87 @@
+header {
+    height: 65px;
+}
+
+.shop {
+    margin-left: 20px;
+    letter-spacing: 2.5px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.cart-button{
+    display: block;
+    float: right;
+    margin: 10px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    background-color: #d5def8;
+    width: 212px;
+    height: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.cart-button:hover {
+    background-repeat: no-repeat;
+    background-position: 173px 16px;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
+
+.goods-list{
+    display: inline-block;
+}
+
+.goods-item{
+    float: left;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(49, 49, 49);
+    margin: 20px;
+    width: 150px;
+    height: 160px;
+    background-color: #d5def8;
+}
+
+.goods-item img {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 80px;
+    width: 110px;
+    align-content: center;
+}
+
+.goods-item h3{
+    text-align: center;
+    margin: 5px;
+}
+
+.goods-item p{
+    margin: 0px;
+    text-align: center;
+}
+
+.goods-item button {
+    margin-left:30px;
+    margin-top: 10px;
+    color: #212121;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    background-color: #ffffff;
+    width: 90px;
+    height: 25px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.goods-item button:hover {
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
