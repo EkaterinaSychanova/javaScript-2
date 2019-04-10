@@ -1,3 +1,4 @@
+
 header {
     height: 65px;
 }
@@ -25,13 +26,9 @@ header {
     width: 212px;
     height: 45px;
     border-radius: 20px;
-    cursor: pointer;
-
 }
 
 .cart-button:hover {
-    background-repeat: no-repeat;
-    background-position: 173px 16px;
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }
 
@@ -83,5 +80,31 @@ header {
 }
 
 .goods-item button:hover {
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
+
+.cart-sum {
+    margin-top: 20px;
+}
+
+.countTotalPrice{
+    display: block;
+    float: right;
+    margin: 10px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    background-color: #d5def8;
+    width: 270px;
+    height: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.countTotalPrice:hover {
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }
