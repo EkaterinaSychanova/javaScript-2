@@ -1,19 +1,27 @@
+@keyframes text-blur-out {
+    0% {
+        filter: blur(0.01);
+    }
+    100% {
+        filter: blur(12px) opacity(0%);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 html,
-body{
+body {
     height: 100%;
 }
 
-.false-container{
+#app {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     min-height: 100%;
-
 }
 
 .container {
@@ -92,9 +100,17 @@ body{
     margin: 40px auto 0;
     width: 1200px;
     height: 70px;
+    
     background: linear-gradient(180deg, #fff, #ba34af);
     padding: 10px
 }
+
+.header_right {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 
 .cart-container {
     position: relative;
@@ -112,22 +128,84 @@ body{
     min-width: 150px;
 }
 
-.cart__product{
+.addProdText {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    color: #fff;
+}
+
+.cart__product {
     display: flex;
     align-items: center;
     padding: 10px;
     margin: 5px;
     border: 1px solid #444444;
     border-radius: 10px;
+    
     background: #ba34af;
-
 }
 
-.cart__product_text-box{
+.cart__product_text-box {
     padding: 10px;
     min-width: 120px;
 }
 
-.cart__product_img{
+.cart__product_img {
     width: 150px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+
+.search__search-products_input {
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+.search__search-products_btn {
+    padding: 7px;    
+    background: #ba34af;
+    border: none;
+    outline: none;
+}
+
+.header_right__title {
+    position: relative;
+    margin-right: 21px;
+    padding: 5px;
+    background: #fff;
+}
+
+.header_right__title:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 12px;
+    height: 28px;
+    top: 0px;
+    right: -7px;
+    transform: skewX(-20deg);
+}
+
+.text-blur-out {
+    animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.title-enter-active {
+    transition: all .3s ease;
+}
+
+.title-leave-active {
+    transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.title-enter, .title-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
 }
