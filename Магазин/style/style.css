@@ -38,11 +38,6 @@ body {
     padding: 10px
 }
 
-.logo__text {
-    margin-left: 10px;
-    font-size: 30px;
-}
-
 .products {
     display: flex;
     justify-content: space-around;
