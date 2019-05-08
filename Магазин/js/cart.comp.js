@@ -73,7 +73,7 @@ Vue.component('cart', {
                 }
             });
     },
-    template: `<div class="cart-container">
+    template:`<div class="cart-container">
                     <button @click="showCart = !showCart" class="btn cart-container__btn_cart" data-id="cart"
                             type="button">Корзина
                     </button>

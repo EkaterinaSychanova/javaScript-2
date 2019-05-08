@@ -15,6 +15,7 @@ Vue.component('products', {
                     this.showProducts.push(el);
                 }
             });
+            
         this.$parent.getJson('getProducts.json')
             .then(data => {
                 for (const el of data) {

@@ -1,3 +1,4 @@
+
 Vue.component('search', {
     data() {
         return {
