@@ -1,0 +1,61 @@
+
+.wrap {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+body, form, input, textarea {
+	box-sizing: border-box;
+}
+
+.form {
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 50%;
+	padding: 20px;
+	text-align: center;
+}
+
+.form__text:focus, .form__input:focus {
+	border: rgb(7, 7, 7);
+}
+
+.form__message {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.form__text {
+	font-size: 18px;
+	background: #FFFFFF;
+	width: 100%;
+	height: calc(100vh - 420px);
+	border: rgba(0, 0, 0, .3) 1px solid;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.form__input {
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	border: rgba(0, 0, 0, .3) 1px solid;
+	background: #FFFFFF;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form__button {
+	margin-right: 20px;
+	font-size: 18px;
+	height: 50px;
+	width: 45%;
+	border: rgba(0, 0, 0, .3) 1px solid;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 5px;
+}
